@@ -16,7 +16,12 @@ class TipCalculatorViewModel: ObservableObject {
             tipAmount = tipSlider
         }
     }
-    @Published var enteredAmount: String = "0"
+    @Published var enteredAmount: String = "0" {
+        didSet {
+            calculateTip()
+            calculateTotal()
+        }
+    }
     let VAT: Double = 25
 
     func calculateTip() {

@@ -16,5 +16,5 @@ git checkout start
 ```
 
 Use TDD methodology when solving the task. Remember: Write the test, let it fail, write the code that needs to pass the test and repeat, see image below.
-![Test-Driven Development Workflow](https://d33wubrfki0l68.cloudfront.net/a81ad880b47aba2f82c07dda0ea74bc3f5587f1a/f64ef/assets/images/test-driven-development-tdd-workflow-diagram-codesweetly-ead35d0606b64c411258f3f93200035f.webp)
+![Test-Driven Development Workflow](https://www.xeridia.co.uk/sites/default/files/contenidos/blog/test-driven-development.png)
 
