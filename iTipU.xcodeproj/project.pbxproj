@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133E82732B6D1C970042EDCF /* TipCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133E82722B6D1C970042EDCF /* TipCalculatorViewModel.swift */; };
 		134AFC902B6CFF7F00D56B61 /* iTipUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AFC8F2B6CFF7F00D56B61 /* iTipUApp.swift */; };
-		134AFC922B6CFF7F00D56B61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AFC912B6CFF7F00D56B61 /* ContentView.swift */; };
+		134AFC922B6CFF7F00D56B61 /* TipCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AFC912B6CFF7F00D56B61 /* TipCalculatorView.swift */; };
 		134AFC942B6CFF8D00D56B61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134AFC932B6CFF8D00D56B61 /* Assets.xcassets */; };
 		134AFC972B6CFF8D00D56B61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134AFC962B6CFF8D00D56B61 /* Preview Assets.xcassets */; };
 		134AFCA12B6CFF8E00D56B61 /* iTipUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AFCA02B6CFF8E00D56B61 /* iTipUTests.swift */; };
-		134AFCAB2B6CFF8E00D56B61 /* iTipUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AFCAA2B6CFF8E00D56B61 /* iTipUUITests.swift */; };
-		134AFCAD2B6CFF8E00D56B61 /* iTipUUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AFCAC2B6CFF8E00D56B61 /* iTipUUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,26 +23,17 @@
 			remoteGlobalIDString = 134AFC8B2B6CFF7F00D56B61;
 			remoteInfo = iTipU;
 		};
-		134AFCA72B6CFF8E00D56B61 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 134AFC842B6CFF7F00D56B61 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 134AFC8B2B6CFF7F00D56B61;
-			remoteInfo = iTipU;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		133E82722B6D1C970042EDCF /* TipCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewModel.swift; sourceTree = "<group>"; };
 		134AFC8C2B6CFF7F00D56B61 /* iTipU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTipU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		134AFC8F2B6CFF7F00D56B61 /* iTipUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTipUApp.swift; sourceTree = "<group>"; };
-		134AFC912B6CFF7F00D56B61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		134AFC912B6CFF7F00D56B61 /* TipCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorView.swift; sourceTree = "<group>"; };
 		134AFC932B6CFF8D00D56B61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		134AFC962B6CFF8D00D56B61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		134AFC9C2B6CFF8E00D56B61 /* iTipUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTipUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		134AFCA02B6CFF8E00D56B61 /* iTipUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTipUTests.swift; sourceTree = "<group>"; };
-		134AFCA62B6CFF8E00D56B61 /* iTipUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTipUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		134AFCAA2B6CFF8E00D56B61 /* iTipUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTipUUITests.swift; sourceTree = "<group>"; };
-		134AFCAC2B6CFF8E00D56B61 /* iTipUUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTipUUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +51,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		134AFCA32B6CFF8E00D56B61 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,7 +59,6 @@
 			children = (
 				134AFC8E2B6CFF7F00D56B61 /* iTipU */,
 				134AFC9F2B6CFF8E00D56B61 /* iTipUTests */,
-				134AFCA92B6CFF8E00D56B61 /* iTipUUITests */,
 				134AFC8D2B6CFF7F00D56B61 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +68,6 @@
 			children = (
 				134AFC8C2B6CFF7F00D56B61 /* iTipU.app */,
 				134AFC9C2B6CFF8E00D56B61 /* iTipUTests.xctest */,
-				134AFCA62B6CFF8E00D56B61 /* iTipUUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,7 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				134AFC8F2B6CFF7F00D56B61 /* iTipUApp.swift */,
-				134AFC912B6CFF7F00D56B61 /* ContentView.swift */,
+				134AFC912B6CFF7F00D56B61 /* TipCalculatorView.swift */,
+				133E82722B6D1C970042EDCF /* TipCalculatorViewModel.swift */,
 				134AFC932B6CFF8D00D56B61 /* Assets.xcassets */,
 				134AFC952B6CFF8D00D56B61 /* Preview Content */,
 			);
@@ -116,15 +98,6 @@
 				134AFCA02B6CFF8E00D56B61 /* iTipUTests.swift */,
 			);
 			path = iTipUTests;
-			sourceTree = "<group>";
-		};
-		134AFCA92B6CFF8E00D56B61 /* iTipUUITests */ = {
-			isa = PBXGroup;
-			children = (
-				134AFCAA2B6CFF8E00D56B61 /* iTipUUITests.swift */,
-				134AFCAC2B6CFF8E00D56B61 /* iTipUUITestsLaunchTests.swift */,
-			);
-			path = iTipUUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +138,6 @@
 			productReference = 134AFC9C2B6CFF8E00D56B61 /* iTipUTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		134AFCA52B6CFF8E00D56B61 /* iTipUUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 134AFCB62B6CFF8E00D56B61 /* Build configuration list for PBXNativeTarget "iTipUUITests" */;
-			buildPhases = (
-				134AFCA22B6CFF8E00D56B61 /* Sources */,
-				134AFCA32B6CFF8E00D56B61 /* Frameworks */,
-				134AFCA42B6CFF8E00D56B61 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				134AFCA82B6CFF8E00D56B61 /* PBXTargetDependency */,
-			);
-			name = iTipUUITests;
-			productName = iTipUUITests;
-			productReference = 134AFCA62B6CFF8E00D56B61 /* iTipUUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +152,6 @@
 						CreatedOnToolsVersion = 15.0;
 					};
 					134AFC9B2B6CFF8E00D56B61 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 134AFC8B2B6CFF7F00D56B61;
-					};
-					134AFCA52B6CFF8E00D56B61 = {
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = 134AFC8B2B6CFF7F00D56B61;
 					};
@@ -221,7 +172,6 @@
 			targets = (
 				134AFC8B2B6CFF7F00D56B61 /* iTipU */,
 				134AFC9B2B6CFF8E00D56B61 /* iTipUTests */,
-				134AFCA52B6CFF8E00D56B61 /* iTipUUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,13 +193,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		134AFCA42B6CFF8E00D56B61 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,7 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				134AFC922B6CFF7F00D56B61 /* ContentView.swift in Sources */,
+				134AFC922B6CFF7F00D56B61 /* TipCalculatorView.swift in Sources */,
+				133E82732B6D1C970042EDCF /* TipCalculatorViewModel.swift in Sources */,
 				134AFC902B6CFF7F00D56B61 /* iTipUApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,15 +214,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		134AFCA22B6CFF8E00D56B61 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				134AFCAD2B6CFF8E00D56B61 /* iTipUUITestsLaunchTests.swift in Sources */,
-				134AFCAB2B6CFF8E00D56B61 /* iTipUUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -286,11 +221,6 @@
 			isa = PBXTargetDependency;
 			target = 134AFC8B2B6CFF7F00D56B61 /* iTipU */;
 			targetProxy = 134AFC9D2B6CFF8E00D56B61 /* PBXContainerItemProxy */;
-		};
-		134AFCA82B6CFF8E00D56B61 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 134AFC8B2B6CFF7F00D56B61 /* iTipU */;
-			targetProxy = 134AFCA72B6CFF8E00D56B61 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -512,42 +442,6 @@
 			};
 			name = Release;
 		};
-		134AFCB72B6CFF8E00D56B61 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3K93P5X8R8;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.tdy.iTipUUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iTipU;
-			};
-			name = Debug;
-		};
-		134AFCB82B6CFF8E00D56B61 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3K93P5X8R8;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.tdy.iTipUUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iTipU;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -574,15 +468,6 @@
 			buildConfigurations = (
 				134AFCB42B6CFF8E00D56B61 /* Debug */,
 				134AFCB52B6CFF8E00D56B61 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		134AFCB62B6CFF8E00D56B61 /* Build configuration list for PBXNativeTarget "iTipUUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				134AFCB72B6CFF8E00D56B61 /* Debug */,
-				134AFCB82B6CFF8E00D56B61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

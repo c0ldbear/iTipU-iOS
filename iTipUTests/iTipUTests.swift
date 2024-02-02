@@ -10,27 +10,45 @@ import XCTest
 
 final class iTipUTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testTipCalculatorViewModelInitialize() {
+        let vm = TipCalculatorViewModel()
+        XCTAssertNotNil(vm)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testTipCalculatorViewModelPropertiesAfterInit() {
+        let vm = TipCalculatorViewModel()
+        XCTAssertEqual(vm.amount, 0)
+        XCTAssertEqual(vm.totalAmount, 0)
+        XCTAssertEqual(vm.tipAmount, 0)
+        XCTAssertEqual(vm.enteredAmount, "0")
+        XCTAssertEqual(vm.tipSlider, 0)
+        XCTAssertEqual(vm.VAT, 25)
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testTipCalculatorViewModelSetAmountProperty() {
+        let vm = TipCalculatorViewModel()
+        let testValue: Double = 100
+        vm.amount = testValue
+        XCTAssertEqual(vm.amount, testValue)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testTipCalculatorViewModelCalculateTipWithoutVAT() {
+        let vm = TipCalculatorViewModel()
+        vm.enteredAmount = "100"
+        vm.tipAmount = 10
+
+        vm.calculateTip()
+        XCTAssertEqual(vm.amount, 110.00)
+    }
+
+    func testTipCalculatorViewModelCalculateTipWithVAT() {
+        let vm = TipCalculatorViewModel()
+        vm.enteredAmount = "100"
+        vm.tipAmount = 10
+        vm.calculateTip()
+
+        vm.calculateTotal()
+        XCTAssertEqual(vm.totalAmount, 137.5)
     }
 
 }
