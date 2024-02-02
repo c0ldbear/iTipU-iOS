@@ -11,7 +11,7 @@ import SwiftUI
 struct iTipUApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TipCalculatorView()
         }
     }
 }
